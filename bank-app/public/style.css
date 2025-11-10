@@ -1,0 +1,34 @@
+body {
+  background: #f07b29;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+button {
+  background: #f07b29;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  color: #f07b29;
+  text-decoration: none;
+}

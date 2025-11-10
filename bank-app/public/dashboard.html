@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Siva Bank Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome to Siva Bank</h2>
+      <form method="POST" action="/deposit">
+        <input name="amount" placeholder="Deposit amount" />
+        <button type="submit">Deposit</button>
+      </form>
+      <form method="POST" action="/withdraw">
+        <input name="amount" placeholder="Withdraw amount" />
+        <button type="submit">Withdraw</button>
+      </form>
+      <a href="/logout">Logout</a>
+    </div>
+  </body>
+</html>
