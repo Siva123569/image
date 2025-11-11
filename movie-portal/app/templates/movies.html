@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Movies</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <h2>Popular Movies</h2>
+  <ul>
+    {% for movie in movies %}
+      <li>{{ movie }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">⬅ Home</a>
+</body>
+</html>
