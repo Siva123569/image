@@ -26,28 +26,34 @@ steps:
 - task: AzureCLI@2
   displayName: "Terraform Init"
   inputs:
-    azureSubscription: "Siva"
-    scriptType: bash
-    scriptLocation: inlineScript
-    inlineScript: |
-      terraform init
+    azureSubscription: 'Siva'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'terraform init'
+
+# Terraform Init
+- task: AzureCLI@2
+  displayName: "Terraform validate"
+  inputs:
+    azureSubscription: 'Siva'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'terraform validate'
 
 # Terraform Plan
 - task: AzureCLI@2
   displayName: "Terraform Plan"
   inputs:
-    azureSubscription: "Siva"
-    scriptType: bash
-    scriptLocation: inlineScript
-    inlineScript: |
-      terraform plan
+    azureSubscription: 'Siva'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'terraform plan'
 
 # Terraform Apply
 - task: AzureCLI@2
   displayName: "Terraform Apply"
   inputs:
-    azureSubscription: "Siva"
-    scriptType: bash
-    scriptLocation: inlineScript
-    inlineScript: |
-      terraform apply -auto-approve
+    azureSubscription: 'Siva'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'terraform apply --auto-approve'
