@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mywarapp-deploy
+  labels:
+    app: mywarapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mywarapp
+  template:
+    metadata:
+      labels:
+        app: mywarapp
+    spec:
+      containers:
+        - name: mywarapp
+          image: nsbyadav14e/loginpage:latest
+          ports:
+            - containerPort: 8080
+
